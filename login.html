@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+
+ <div class="container">
+
+    <div class="form-box">
+        
+       <header>
+        <h1 id="title">Login</h1>
+       </header>
+       <form action="">
+       <input type="text" placeholder="Name" id="nameField">
+       <input type="email" placeholder="User Name or Email" id="Email">
+       <input type="password" placeholder="password">
+       <a href="">Forget password</a>   
+       <input type="button"  value="Login" id="signinbtn" >
+     <div class="links">
+      <a href="#"><img src="5296499_fb_facebook_facebook logo_icon.png" alt=""></a>
+      <a href="#"><img src="3225183_app_logo_media_popular_social_icon.png" alt=""></a>
+       </div>
+       <p
+         class="signup">Not a number ?<a href="#" id="signupBtn">sign Up</a></p>
+       </p>
+       </form>
+
+               
+
+    </div>
+
+ </div>
+ <script>
+ const title=document.getElementById('title');
+ const nameFiled=document.getElementById('nameField');
+ const signupBtn=document.getElementById('signupBtn');
+ const siginbtn=document.getElementById('signinbtn');
+ const Email=document.getElementById('Email');
+
+ signupBtn.onclick = function(){
+
+   title.innerHTML = "sign Up";
+   nameFiled.style.display="block";
+ }
+ siginbtn.onclick = function(){
+
+   Email.placeholder="Email";
+   title.innerHTML = "Login";
+   nameFiled.style.display="none";
+ }
+
+
+ </script>   
+
+</body>
+</html>
